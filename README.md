@@ -74,6 +74,7 @@ Back-end
 	•	MySQL – Database per la persistenza dei dati
 
 Altre tecnologie e strumenti
+
 	•	Maven – Per la gestione delle dipendenze e build del progetto
 	•	Postman – Per il testing delle API REST
 	•	Git + GitHub – Controllo versione e hosting della repository
