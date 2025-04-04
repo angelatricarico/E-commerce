@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/SerraLana/CSS/profilo.css">
+
+<script src="/SerraLana/JS/logout.js" defer></script>   
+
+</head>
+<body>
+
+      <!-- HEADER -->
+   
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/SerraLana/HTML/home.html">SERRALANA</a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="/SerraLana/HTML/profilo2.html ">
+                  <i class="fa-solid fa-circle-user fa-2x"></i>                    
+                    </a>
+                    <span class="tooltip">Profilo</span>
+                  </li> 
+                    <li class="nav-item"><a href="/SerraLana/HTML/carrello.html">
+                      <i class="fa-solid fa-cart-shopping fa-2x"></i>  
+                    </a>
+                    <span class="tooltip">Carrello</span>
+                  </li>
+                    <li class="nav-item"><a href="/SerraLana/HTML/wishlist.html">
+                      <i class="fa-solid fa-heart fa-2x"></i> 
+                    </a>
+                    <span class="tooltip">Lista desideri</span>
+                  </li>
+                </ul>
+            </div>
+      </nav> 
+ 
+
+
+
+    <!-- PROFILO -->
+
+    <div id="background">
+      <div class="row" id="formRighe">
+          <div class="col-3" id="profilo">
+              <div id="form">
+                  <form id="profileForm">
+                      <div id="titolo"> LE TUE INFORMAZIONI </div>
+                      <br>
+                        <!-- Email -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="email" class="form-control" required disabled />
+                          <label class="form-label" for="email">EMAIL</label>
+                        </div>
+
+                        <!-- Username -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="username" class="form-control" required disabled />
+                          <label class="form-label" for="username">USERNAME</label>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-outline mb-4 position-relative">
+                          <input type="password" id="password" class="form-control" required data-original="" disabled />
+                          <label class="form-label" for="password">PASSWORD</label>
+                          <i id="togglePassword" class="fas fa-eye position-absolute" 
+                            style="right: 10px; top: 13px; cursor: pointer;"></i>
+                        </div>
+
+                      <hr>
+
+                      <div id="titolo"> DATI PERSONALI </div>
+                      <br>
+
+                      <!-- Nome -->
+                      <div class="form-outline mb-4">
+                        <input type="text" id="nome" class="form-control" required disabled />
+                        <label class="form-label" for="nome">NOME</label>
+                      </div>
+
+                      <!-- Cognome -->
+                      <div class="form-outline mb-4">
+                        <input type="text" id="cognome" class="form-control" required disabled />
+                        <label class="form-label" for="cognome">COGNOME</label>
+                      </div>
+
+                      <!-- Indirizzo -->
+                      <div class="form-outline mb-4">
+                        <input type="text" id="indirizzo" class="form-control" required disabled />
+                        <label class="form-label" for="indirizzo">INDIRIZZO</label>
+                      </div>
+
+                      <!-- Data di Nascita -->
+                      <div class="date-container">
+                        <input type="date" id="dataNascita" class="form-control" required disabled />
+                        <i class="fas fa-calendar-alt"></i>
+                      </div>
+
+                      <hr>
+
+                      <div id="titolo"> DATI DI PAGAMENTO </div>
+                      <br>
+
+                      <!-- Numero Carta di Credito -->
+                      <div class="form-outline mb-4">
+                        <input type="text" id="numeroCarta" class="form-control" required disabled />
+                        <label class="form-label" for="numeroCarta">NUMERO CARTA</label>
+                      </div>
+
+                      <!-- Scadenza Carta -->
+                      <div class="form-outline mb-4">
+                        <input type="text" id="scadenzaCarta" class="form-control" required disabled />
+                        <label class="form-label" for="scadenzaCarta">SCADENZA (MM/YY)</label>
+                      </div>
+
+                      <!-- CVC -->
+                      <div class="form-outline mb-4">
+                        <input type="password" id="cvcCarta" class="form-control" required disabled />
+                        <label class="form-label" for="cvcCarta">CVC</label>
+                      </div>
+
+
+                      <div class="btn-container">
+                        <button id="deleteAccountButton" type="button" class="btn btn-danger">ELIMINA</button>
+                        <button id="updateButton" type="button" class="btn btn-success">MODIFICA</button>
+                        <button id="logoutButton" type="button" class="btn btn-dark">ESCI</button>
+                        <button id="ordersButton" type="button" class="btn btn-primary">ORDINI</button>
+                    </div>
+                    
+                    
+                  </form>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="container-fluid-footer">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-3">
+            <h5  id="scritta-footer">SUPPORTO</h5>
+            <div class="nav flex-column">
+              <a href="/SerraLana/PDF/TerminiCondizioni.pdf" target="_blank" rel="noopener noreferrer" id="scritta-footer">Termini e condizioni</a>   
+              <a href="/SerraLana/HTML/assistenza2.html" id="scritta-footer">FAQs</a>
+            </div>
+          </div> 
+    
+          <div class="col-6">
+            <h5  id="scritta-footer">AZIENDA</h5>
+            <div class="nav flex-column">
+              <a id="scritta-footer">Sede legale: Via Roma 123, 00100, Roma, Italia </a>
+              <a id="scritta-footer">Partita IVA: IT12345678901 </a>   
+              <a id="scritta-footer">Ragione sociale: SERRALANA S.R.L </a>
+              <a id="scritta-footer">Codice Fiscale: 12345678901 </a>           
+            </div>
+          </div>
+    
+    
+        <div class="col-3">
+              <h5  id="scritta-footer">SEGUICI</h5>
+              <div class="social">
+                <a href="#" id="footer">
+                  <i class="fa-brands fa-square-facebook fa-3x"></i>                </a>
+                <a href="#" id="footer">
+                  <i class="fa-brands fa-square-x-twitter fa-3x"></i>
+                </a>
+                <a href="#" id="footer">
+                  <i class="fa-brands fa-square-instagram fa-3x"></i>                </a>
+              </div>
+              <br> <br>
+    
+              <h5  id="scritta-footer"> METODI DI PAGAMENTO</h5>
+              <div class = "payment">
+                <i class="fa-brands fa-cc-visa fa-3x"></i>                </a>
+                <i class="fa-brands fa-cc-mastercard fa-3x"></i>
+                <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+              </div>
+          </div>
+    
+          <div id="marchio">
+            <h1  id="scritta-footer">SERRALANA</h1>
+            <p  id="scritta-footer">© Copyright</p>
+          </div>
+          </div>
+      </footer>
+    </div>
+
+
+      
+    
+</body>
+</html>
